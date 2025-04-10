@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>The Healing Canopy - Rooted in Nature</title>
     <link rel="stylesheet" href="style.css">
     <!-- Replace with chosen Google Fonts if desired -->
@@ -13,7 +13,12 @@
     <header id="main-header">
         <div class="container flex-container">
             <div class="logo">The Healing Canopy</div>
-            <nav>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="main-nav">
                 <ul>
                     <li><a href="#location">Location</a></li>
                     <li><a href="#comparison">Compare</a></li>
@@ -66,8 +71,13 @@
                     </div>
                     <div class="feature-card">
                         <span class="feature-icon">🌿</span>
-                        <h4>75% Open Space</h4>
+                        <h4>80% Open Space</h4>
                         <p>Abundant natural areas</p>
+                    </div>
+                    <div class="feature-card">
+                        <span class="feature-icon">👥</span>
+                        <h4>Limited Community</h4>
+                        <p>Limited to just 15 families</p>
                     </div>
                     <div class="feature-card">
                         <span class="feature-icon">💧</span>
@@ -85,15 +95,15 @@
                         <p>Sustainable agricultural design</p>
                     </div>
                     <div class="feature-card">
-                        <span class="feature-icon">🍳</span>
-                        <h4>Community Kitchen</h4>
-                        <p>Shared cooking facilities</p>
+                        <span class="feature-icon">🏠</span>
+                        <h4>Clubhouse</h4>
+                        <p>Eat. Play. Relax.</p>
                     </div>
-                    <div class="feature-card">
+                    <!-- <div class="feature-card">
                         <span class="feature-icon">🍽️</span>
                         <h4>Dining Hall</h4>
                         <p>Communal meal space</p>
-                    </div>
+                    </div> -->
                     <div class="feature-card">
                         <span class="feature-icon">☀️</span>
                         <h4>Solar Power</h4>
@@ -137,7 +147,7 @@
                     
                     <div class="comparison-row">
                         <div class="comparison-cell">Merely 10% open spaces</div>
-                        <div class="comparison-cell highlight-cell">Breathe freely with 75% open natural areas</div>
+                        <div class="comparison-cell highlight-cell">Breathe freely with 80% open natural areas</div>
                     </div>
                     
                     <div class="comparison-row">
@@ -433,8 +443,7 @@
 
     <footer>
         <div class="container">
-             <p>© <span id="year"></span> The Healing Canopy. All rights reserved.</p>
-             <!-- Add Privacy Policy link if needed -->
+            <p>&copy; <span id="year">2023</span> The Healing Canopy. All rights reserved.</p>
         </div>
     </footer>
 
