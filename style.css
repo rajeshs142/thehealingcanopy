@@ -935,3 +935,15 @@ ul {
 #flora .flora-category h3 {
     height: 72px;
 }
+
+.contact-message {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.contact-alternative {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
